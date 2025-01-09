@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import Logo from "../../assets/images/bacola-logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { IoSearch } from "react-icons/io5";
-
+import { CiUser } from "react-icons/ci";
 import CountryDropdown from "../countryDropdown";
 import { Button } from "@mui/material";
+import { CiShoppingCart } from "react-icons/ci";
+import SearchBox from "./searchBox";
+import Navigation from "./navigation";
+
 const Header = () => {
   return (
     <div className="headerWrapper">
@@ -28,17 +31,26 @@ const Header = () => {
             </div>
             <div className="col-sm-10 d-flex align-items-center part2">
               <CountryDropdown />
-              <div className="headerSearch">
-                <input type="text"  placeholder="Search for products..."/>
-                <Button>
-                  <IoSearch />
+              <SearchBox />
+              <div className="part3 d-flex align-items-center ml-auto">
+                <Button className="circleBtn">
+                  <CiUser />
                 </Button>
+                <div className="cartTab ml-auto">
+                  <span className="price">$0.00</span>
+                  <Button className="circleBtn ml-1 btnCartItem">
+                    <CiShoppingCart />
+                    <span className="d-flex align-items-center justify-content-center count">
+                      0
+                    </span>
+                  </Button>
+                </div>
               </div>
             </div>
-            <div className="part3"></div>
           </div>
         </div>
       </div>
+      <Navigation/>
     </div>
   );
 };
