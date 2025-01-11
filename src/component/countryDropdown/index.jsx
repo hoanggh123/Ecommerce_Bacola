@@ -13,17 +13,17 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const CountryDropdown = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const [selectedTab, setselectedTab] = useState(null);
-  const [countryList, setcountryList] = useState([]);
+  const [selectedTab, setSelectedTab] = useState(null);
+  const [countryList, setCountryList] = useState([]);
   const context = useContext(MyContext);
 
   const selectCountry = (index, country) => {
-    setselectedTab(index);
+    setSelectedTab(index);
     setIsOpenModal(false);
     context.setSelectedCountry(country);
   };
   useEffect(() => {
-    setcountryList(context.countryList);
+    setCountryList(context.countryList);
   }, [context.countryList]);
 
   const filterList = (e) => {
@@ -31,9 +31,8 @@ const CountryDropdown = () => {
     const list = context.countryList.filter((item) => {
       return item.country.toLowerCase().includes(keyword);
     });
-    setcountryList(list);
+    setCountryList(list);
   };
-
   return (
     <React.Fragment>
       <Button
@@ -43,11 +42,15 @@ const CountryDropdown = () => {
         <div className="info d-flex flex-column">
           <span className="label">Your location</span>
           <span className="name">
-            {context.selectedCountry !== ""
-              ? context.selectedCountry.length > 10
-                ? context.selectedCountry?.substr(0, 10) + "..."
-                : context.selectedCountry
-              : "Select Location"}
+            {(() => {
+              if (context.selectedCountry === "") {
+                return "Select Location";
+              } else if (context.selectedCountry.length > 10) {
+                return context.selectedCountry?.substr(0, 10) + "...";
+              } else {
+                return context.selectedCountry;
+              }
+            })()}
           </span>
         </div>
         <span className="countryDropIcons">
@@ -80,7 +83,7 @@ const CountryDropdown = () => {
             countryList?.map((item, index) => (
               <li
                 className={`${selectedTab === index ? "active" : ""}`}
-                key={index}
+                key={item.id}
               >
                 <Button onClick={() => selectCountry(index, item.country)}>
                   {item.country}
