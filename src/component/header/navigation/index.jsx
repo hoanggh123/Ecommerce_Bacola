@@ -4,12 +4,13 @@ import "./index.css";
 import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { IoHomeOutline } from "react-icons/io5";
+import { IoHomeOutline, IoFastFoodOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
-import { MdOutlineEmojiFoodBeverage } from "react-icons/md";
-import { IoFastFoodOutline } from "react-icons/io5";
-import { MdOutlineBakeryDining } from "react-icons/md";
-import { MdOutlineContactPhone } from "react-icons/md";
+import {
+  MdOutlineContactPhone,
+  MdOutlineBakeryDining,
+  MdOutlineEmojiFoodBeverage,
+} from "react-icons/md";
 import { TbBrandBlogger } from "react-icons/tb";
 
 const Navigation = () => {
