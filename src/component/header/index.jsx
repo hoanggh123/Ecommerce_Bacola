@@ -4,11 +4,11 @@ import "./index.css";
 import Logo from "../../assets/images/bacola-logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CiUser } from "react-icons/ci";
-import CountryDropdown from "../countryDropdown";
 import { Button } from "@mui/material";
 import { CiShoppingCart } from "react-icons/ci";
 import SearchBox from "./searchBox";
 import Navigation from "./navigation";
+import CountryDropdown from "../countryDropdown";
 
 const Header = () => {
   return (
@@ -30,7 +30,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="col-sm-10 d-flex align-items-center part2">
-              <CountryDropdown />
+            <CountryDropdown />
               <SearchBox />
               <div className="part3 d-flex align-items-center ml-auto">
                 <Button className="circleBtn">
@@ -50,7 +50,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Navigation/>
+      <Navigation />
     </div>
   );
 };

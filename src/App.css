@@ -18,3 +18,9 @@ button {
   outline: none !important;
   background: none !important;
 }
+a {
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
