@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
-
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @media (min-width: 1300px) {
   .container,
   .container-lg,
@@ -21,6 +23,7 @@ button {
 a {
   text-decoration: none;
 }
-ul,li{
+ul,
+li {
   list-style: none;
 }

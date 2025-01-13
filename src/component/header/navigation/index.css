@@ -1,4 +1,6 @@
-/* General Styling */
+nav {
+  border-bottom: 1px solid #e3e4e6;
+}
 nav .navPart1,
 nav .navPart2 {
   padding-top: 20px;
@@ -36,6 +38,7 @@ nav .catWrapper .allCatTab .icon2 {
   margin-left: 15px;
 }
 nav .catWrapper .sideBarMenu {
+  z-index: 999;
   position: absolute;
   min-width: 270px;
   left: 0;
@@ -45,31 +48,34 @@ nav .catWrapper .sideBarMenu {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   opacity: 0;
-  padding: 18px 0;
+  padding: 18px 0 0 0;
 }
-
-nav .catWrapper .sideBarMenu ul li {
- width: 100%;
-  margin: 5px 0;
+nav .catWrapper .sideBarMenu ul {
+  padding: 0;
 }
-
-nav .catWrapper .sideBarMenu.active {
-  opacity: 1;
-}
-
-
 
 nav .catWrapper .sideBarMenu ul li a {
-  max-width: 100% !important;
-  text-decoration: none;
-  color: #3e445a;
-  font-family: "Dosis", sans-serif;
-  font-size: 14px;
-  border: 1px solid;
+  display: flex;
+  align-items: center;
+  padding: 4px 25px;
 }
-
-nav .catWrapper .sideBarMenu ul li a:hover {
+nav .catWrapper .sideBarMenu ul li a svg {
+  font-size: 14px;
+  margin-right: 15px;
+  color: #3e445a;
+}
+nav .catWrapper .sideBarMenu ul li a button {
+  width: 100%;
+  color: #3e445a;
+  justify-content: flex-start;
+  text-transform: capitalize;
+}
+nav .catWrapper .sideBarMenu ul li:hover svg,
+nav .catWrapper .sideBarMenu ul li:hover button {
   color: #2bbef9;
+}
+nav .catWrapper .sideBarMenu.active {
+  opacity: 1;
 }
 
 nav .navPart2 {
@@ -78,7 +84,7 @@ nav .navPart2 {
 }
 
 nav .navPart2 ul {
-  margin-bottom: 0;
+  margin-bottom: -6px;
   margin-left: auto;
 }
 
@@ -112,16 +118,14 @@ nav .navPart2 ul li a svg {
   margin-left: 10px;
 }
 
-/* Submenu Styling */
 nav .navPart2 ul li .subMenu {
   position: absolute;
-  top: 100%;
+  top: 102%;
   left: 0;
   background: #ffffff;
   width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 10px 0 0 0;
   display: none;
   z-index: 10;
 }

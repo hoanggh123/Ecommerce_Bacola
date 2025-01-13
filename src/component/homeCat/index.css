@@ -1,0 +1,27 @@
+.homeCat {
+  padding: 35px 0;
+}
+
+
+.homeCat .swiper .item {
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  background: #feefea;
+  border-radius: 10px;
+}
+
+.homeCat .swiper .item img {
+  width: 80%;
+}
+.homeCat .swiper-button-prev::after{
+  left: -10px !important;
+}
+.homeCat .swiper-button-next::after{
+  left: 10px !important;
+}
+.homeCat .swiper-button-prev::after,
+.homeCat .swiper-button-next::after {
+  font-size: 12px !important;
+  
+}

@@ -83,7 +83,7 @@ const CountryDropdown = () => {
             countryList?.map((item, index) => (
               <li
                 className={`${selectedTab === index ? "active" : ""}`}
-                key={item.id}
+                key={index}
               >
                 <Button onClick={() => selectCountry(index, item.country)}>
                   {item.country}

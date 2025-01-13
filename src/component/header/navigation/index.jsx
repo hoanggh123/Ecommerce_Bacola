@@ -11,6 +11,16 @@ import {
   MdOutlineBakeryDining,
   MdOutlineEmojiFoodBeverage,
 } from "react-icons/md";
+import {
+  FaCarrot,
+  FaDrumstickBite,
+  FaEgg,
+  FaCoffee,
+  FaBreadSlice,
+  FaIceCream,
+  FaCookie,
+  FaShoppingBasket,
+} from "react-icons/fa";
 import { TbBrandBlogger } from "react-icons/tb";
 
 const Navigation = () => {
@@ -24,7 +34,6 @@ const Navigation = () => {
     <nav>
       <div className="container">
         <div className="row">
-          {/* All Categories Section */}
           <div className="col-sm-2 navPart1">
             <div className="catWrapper">
               <Button
@@ -43,41 +52,49 @@ const Navigation = () => {
                 <ul>
                   <li>
                     <Link to="/fruits-vegetables">
+                      <FaCarrot />
                       <Button>Fruits & Vegetables</Button>
                     </Link>
                   </li>
                   <li>
                     <Link to="/meats-seafood">
+                      <FaDrumstickBite />
                       <Button>Meats & Seafood</Button>
                     </Link>
                   </li>
                   <li>
                     <Link to="/breakfast-dairy">
+                      <FaEgg />
                       <Button>Breakfast & Dairy</Button>
                     </Link>
                   </li>
                   <li>
                     <Link to="/beverages">
+                      <FaCoffee />
                       <Button>Beverages</Button>
                     </Link>
                   </li>
                   <li>
                     <Link to="/breads-bakery">
+                      <FaBreadSlice />
                       <Button>Breads & Bakery</Button>
                     </Link>
                   </li>
                   <li>
                     <Link to="/frozen-foods">
+                      <FaIceCream />
                       <Button>Frozen Foods</Button>
                     </Link>
                   </li>
                   <li>
                     <Link to="/biscuits-snacks">
+                      <FaCookie />
                       <Button>Biscuits & Snacks</Button>
                     </Link>
                   </li>
                   <li>
                     <Link to="/grocery-staples">
+                      <FaShoppingBasket />
                       <Button>Grocery & Staples</Button>
                     </Link>
                   </li>

@@ -1,0 +1,169 @@
+.productModal .MuiPaper-elevation {
+    max-width: 900px !important;
+    padding: 25px;
+    position: relative;
+    width: 900px !important;
+  }
+  .productModal .MuiPaper-elevation .close_ {
+    background: #f1f1f1 !important;
+    border-radius: 50% !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    position: absolute !important;
+    right: 10px;
+    top: 10px;
+    width: 40px !important;
+  }
+  
+  .productModal .MuiPaper-elevation .close_ svg {
+    color: #202435;
+    font-size: 22px;
+  }
+  
+  .productModal h4 {
+    color: #000c !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+  }
+  
+  .productZoom {
+    border-radius: 15px;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .zoomSliderBig {
+    width: 100% !important;
+    height: auto;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .zoomSlider .item {
+    border: 2px solid transparent !important;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .zoomSlider .slick-current .item {
+    border: 2px solid #3bb77e !important;
+  }
+  
+  .zoomSlider .slick-arrow {
+    top: 55% !important;
+    zoom: 88% !important;
+  }
+  
+  .col-md-7 .badge {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 7px 10px !important;
+  }
+  
+  .col-md-7 .badge.bg-success {
+    background: #e5f8ed !important;
+    color: #16b858 !important;
+  }
+  
+  .productDetaileModal p {
+    font-size: 14px;
+    line-height: 25px;
+    opacity: .8;
+  }
+  
+  .productDetaileModal .productSize {
+    height: auto;
+    padding: 25px 0;
+    width: 100%;
+  }
+  
+  .productSize ul li {
+    margin-right: 10px !important;
+  }
+  
+  .productSize ul li a {
+    align-items: center;
+    border: 1px solid #0000001a;
+    border-radius: 4px !important;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px !important;
+    justify-content: center;
+    padding: 5px 10px !important;
+    text-decoration: none !important;
+    transition: all .1s ease-in-out;
+  }
+  
+  .productSize ul li a:hover {
+    background: #ececec;
+  }
+  
+  .quantityDrop {
+    gap: 10px;
+    width: 150px;
+  }
+  
+  .quantityDrop button {
+    background: #edeef5 !important;
+    border: 1px solid #0000001a !important;
+    border-radius: 50% !important;
+    color: #000;
+    height: 40px !important;
+    min-width: 40px !important;
+    width: 40px !important;
+  }
+  
+  .quantityDrop button svg {
+    color: #000 !important;
+  }
+  
+  .quantityDrop input {
+    background: #0000;
+    border: 0;
+    outline: none !important;
+    text-align: center;
+    width: 30px;
+  }
+  
+  .actions_ .btn-big {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    min-width: auto !important;
+    padding: 8px 30px !important;
+  }
+  
+  .btn-blue:hover {
+    background: #53348c !important;
+  }
+  
+  .bg-red {
+    background: #ed174a !important;
+  }
+
+  .productModal .actions button {
+    border: 1px solid #0000001a !important;
+    color: #000 !important;
+    font-size: 10px !important;
+    margin:  0 4px;
+  }
+  
+  .productModal .actions button:hover {
+    background: #f1f1f1;
+    opacity: 1 !important;
+  }
+  
+  .productModal .actions button svg {
+    color: #ed174a !important;
+    opacity: 1 !important;
+  }
+  
+  .productZoom .badge {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+  }
