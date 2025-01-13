@@ -48,6 +48,7 @@ nav .catWrapper .sideBarMenu {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   opacity: 0;
+  visibility: hidden;
   padding: 18px 0 0 0;
 }
 nav .catWrapper .sideBarMenu ul {
@@ -76,6 +77,8 @@ nav .catWrapper .sideBarMenu ul li:hover button {
 }
 nav .catWrapper .sideBarMenu.active {
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 nav .navPart2 {

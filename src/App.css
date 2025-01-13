@@ -21,7 +21,7 @@ button {
   background: none !important;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 ul,
 li {
