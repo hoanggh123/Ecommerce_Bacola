@@ -55,6 +55,7 @@
 }
 
 .productItem {
+  overflow: hidden;
   width: 100%;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -81,6 +82,7 @@
 }
 
 .productItem .info .oldPrice {
+  margin-right: 12px;
   font-size: 18px;
   font-weight: 600;
   color: #c2c2d3;

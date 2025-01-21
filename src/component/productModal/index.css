@@ -25,15 +25,7 @@
     font-weight: 600 !important;
     font-size: 22px !important;
   }
-  
-  .productZoom {
-    border-radius: 15px;
-    height: auto;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-  }
-  
+
   .zoomSliderBig {
     width: 100% !important;
     height: auto;
@@ -68,13 +60,13 @@
     color: #16b858 !important;
   }
   
-  .productDetaileModal p {
+  .productDetailModal p {
     font-size: 14px;
     line-height: 25px;
     opacity: .8;
   }
   
-  .productDetaileModal .productSize {
+  .productDetailModal .productSize {
     height: auto;
     padding: 25px 0;
     width: 100%;
@@ -102,32 +94,6 @@
     background: #ececec;
   }
   
-  .quantityDrop {
-    gap: 10px;
-    width: 150px;
-  }
-  
-  .quantityDrop button {
-    background: #edeef5 !important;
-    border: 1px solid #0000001a !important;
-    border-radius: 50% !important;
-    color: #000;
-    height: 40px !important;
-    min-width: 40px !important;
-    width: 40px !important;
-  }
-  
-  .quantityDrop button svg {
-    color: #000 !important;
-  }
-  
-  .quantityDrop input {
-    background: #0000;
-    border: 0;
-    outline: none !important;
-    text-align: center;
-    width: 30px;
-  }
   
   .actions_ .btn-big {
     font-size: 15px !important;
@@ -161,9 +127,3 @@
     opacity: 1 !important;
   }
   
-  .productZoom .badge {
-    left: 20px;
-    position: absolute;
-    top: 20px;
-    z-index: 100;
-  }

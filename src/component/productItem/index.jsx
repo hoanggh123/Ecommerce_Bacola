@@ -5,14 +5,14 @@ import { IoHeartOutline } from "react-icons/io5";
 import { MyContext } from "../../App";
 import "./index.css";
 
-const ProductItem = () => {
+const ProductItem = (props) => {
   const context = useContext(MyContext);
   const viewProductDetail = (id) => {
     context.setIsOpenProductModal(true);
   };
   return (
     <>
-      <div className="item productItem">
+      <div className={`productItem ${props.itemView}`}>
         <div className="imgWrapper">
           <img
             className="w-100"

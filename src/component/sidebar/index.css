@@ -18,7 +18,9 @@
     overflow-x: hidden;
     overflow-y: auto;
   }
-  
+  .product_Listing_Page .productListing .sidebar .scroll ul {
+    padding-left: 0 !important;
+  }
   .product_Listing_Page .productListing .sidebar .scroll ul li {
     list-style: none;
     margin-bottom: 0px;

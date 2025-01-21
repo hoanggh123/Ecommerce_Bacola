@@ -1,0 +1,14 @@
+  
+  .productZoom {
+    border-radius: 15px;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  }
+  .productZoom .badge {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+  }

@@ -3,11 +3,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home';
 import Header from './component/header';
-import { createContext, useEffect, useState, useMemo } from 'react'; 
+import { createContext, useEffect, useState, useMemo } from 'react';
 import axios from 'axios';
 import Footer from './component/footer';
 import ProductModal from './component/productModal';
 import Listing from './pages/listing';
+import ProductDetail from './pages/productDetail';
 const MyContext = createContext();
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cat/:id' element={<Listing />} />
+          <Route exact={true} path='/product/:id' element={<ProductDetail />} />
         </Routes>
         <Footer />
         {isOpenProductModal && <ProductModal />}

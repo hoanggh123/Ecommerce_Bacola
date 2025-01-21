@@ -1,0 +1,13 @@
+.productDetails .hd {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.productDetails .text-light {
+  color: #9b9bb4 !important;
+  margin-right: 4px;
+  border: none;
+  padding: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
