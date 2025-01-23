@@ -1,14 +1,23 @@
-  
-  .productZoom {
-    border-radius: 15px;
-    height: auto;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-  }
-  .productZoom .badge {
-    left: 20px;
-    position: absolute;
-    top: 20px;
-    z-index: 100;
-  }
+.productZoom {
+  border-radius: 15px;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+.productDetails .productZoomBig {
+  height: 350px !important;
+}
+.productZoom .badge {
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  z-index: 100;
+}
+.productZoom .badge-primary {
+  background: #2bbef9 !important;
+}
+.zoomSliderBig {
+  width: 100% !important;
+}

@@ -26,35 +26,22 @@
     font-size: 22px !important;
   }
 
-  .zoomSliderBig {
-    width: 100% !important;
-    height: auto;
-    height: 350px;
-    overflow: hidden;
-  }
-  
-  .zoomSlider .item {
-    border: 2px solid transparent !important;
-    overflow: hidden;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  .zoomSlider .slick-current .item {
-    border: 2px solid #3bb77e !important;
-  }
-  
-  .zoomSlider .slick-arrow {
-    top: 55% !important;
-    zoom: 88% !important;
-  }
-  
   .col-md-7 .badge {
     border-radius: 20px;
     display: inline-block;
     padding: 7px 10px !important;
   }
-  
+  .productDetailModal .info .oldPrice {
+    margin-right: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #c2c2d3;
+    text-decoration: line-through;
+  }
+  .productDetailModal .info .netPrice {
+    font-size: 18px;
+    font-weight: 600;
+  }
   .col-md-7 .badge.bg-success {
     background: #e5f8ed !important;
     color: #16b858 !important;

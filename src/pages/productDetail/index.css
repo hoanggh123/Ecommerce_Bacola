@@ -3,11 +3,40 @@
   font-weight: 600;
   margin-bottom: 15px;
 }
+.description,
+.productDetails .info,
+.productDetails .badge ,
+.productDetails .quantityDrop{
+  margin-left: 16px;
+}
 .productDetails .text-light {
+  margin-left: 8px;
   color: #9b9bb4 !important;
-  margin-right: 4px;
   border: none;
   padding: 0;
   font-size: 0.75rem;
   font-weight: 400;
+}
+
+.productDetails .info .oldPrice {
+  margin-right: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #c2c2d3;
+  text-decoration: line-through;
+}
+
+.productDetails .info .netPrice {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.productDetails .badge {
+  border-radius: 20px;
+  display: inline-block;
+  padding: 7px 10px !important;
+}
+.productDetails .badge.badge-success {
+  background: #e5f8ed !important;
+  color: #16b858 !important;
 }
