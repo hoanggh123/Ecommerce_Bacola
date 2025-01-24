@@ -43,7 +43,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/cat/:id' element={<Listing />} />
+          <Route path='/category/:id' element={<Listing />} />
           <Route exact={true} path='/product/:id' element={<ProductDetail />} />
         </Routes>
         <Footer />

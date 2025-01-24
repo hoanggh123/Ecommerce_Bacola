@@ -7,19 +7,17 @@ const QuantityBox = () => {
   const [quantity, setQuantity] = useState(1);
 
   const handleIncrease = () => {
-    setQuantity((prev) => prev + 1); // Tăng số lượng
+    setQuantity((prev) => prev + 1);
   };
 
   const handleDecrease = () => {
-    setQuantity((prev) => (prev > 1 ? prev - 1 : 1)); // Giảm số lượng, không cho nhỏ hơn 1
+    setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
   };
 
   const handleInputChange = (e) => {
     const value = e.target.value;
-
-    // Kiểm tra xem giá trị có phải là số nguyên dương hay không
     if (/^\d*$/.test(value)) {
-      setQuantity(value === '' ? '' : parseInt(value, 10)); // Nếu rỗng thì giữ rỗng, nếu không thì chuyển thành số
+      setQuantity(value === '' ? '' : parseInt(value, 10)); 
     }
   };
 
@@ -31,7 +29,7 @@ const QuantityBox = () => {
       <input
         type="text"
         value={quantity}
-        onChange={handleInputChange} // Thêm sự kiện onChange để cập nhật giá trị
+        onChange={handleInputChange}
         className="quantityInput"
       />
       <Button onClick={handleIncrease}>
