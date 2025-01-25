@@ -1,0 +1,35 @@
+.cartPage .table thead {
+  background: #e3e3e3 !important;
+  overflow: hidden !important;
+}
+
+
+.cartPage .table thead th {
+  border: 0 !important;
+}
+
+.cartPage .table thead th:first-child {
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+}
+
+.cartPage .table thead th:last-child {
+  border-bottom-right-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.cartPage .table tbody td {
+  vertical-align: middle;
+}
+
+.cartPage .imgWrapper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.cartPage .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

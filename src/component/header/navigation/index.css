@@ -93,10 +93,10 @@ nav .navPart2 ul {
 
 nav .navPart2 ul li {
   position: relative;
+  margin-right: -16px;
 }
 
 nav .navPart2 ul li a {
-  text-decoration: none;
   color: #3e445a;
   font-family: "Dosis", sans-serif;
   font-size: 15px;
