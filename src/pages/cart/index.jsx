@@ -1,5 +1,8 @@
 import React from "react";
-import './index.css'
+import "./index.css";
+import { Link } from "react-router-dom";
+import { IoIosClose } from "react-icons/io";
+import QuantityBox from "../../component/quantityBox";
 const Cart = () => {
   return (
     <section className="section cartPage">
@@ -11,7 +14,7 @@ const Cart = () => {
               There are <b>3</b> products in your cart
             </p>
             <div className="table-responsive">
-              <div className="table">
+              <table className="table">
                 <thead>
                   <tr>
                     <th width="35%">Product</th>
@@ -21,26 +24,41 @@ const Cart = () => {
                     <th width="10%">Remove</th>
                   </tr>
                 </thead>
-                <tbody>
+               
+              </table>
+              <tbody>
                   <tr>
-                    <td>
-                      <div className="d-flex align-items-center cartItemWrapper">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-600x600.jpg"
-                            alt="ProductCart"
-                            className="w-100"
-                          />
+                    <td width="35%">
+                      <Link to="/product/1">
+                        <div className="d-flex align-items-center cartItemWrapper">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-600x600.jpg"
+                              alt="ProductCart"
+                              className="w-100"
+                            />
+                          </div>
+                          <div className="info px-3">
+                            <h6 className="mb-0">
+                              {" "}
+                              All Natural Italian-Style Chicken Meatballs
+                            </h6>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td width="15%">$7.25</td>
+                    <td width="25%">
+                      <QuantityBox />
+                    </td>
+                    <td width="15%">$7.25</td>
+                    <td width="10%">
+                      <span className="remove">
+                        <IoIosClose />
+                      </span>
+                    </td>
                   </tr>
                 </tbody>
-              </div>
             </div>
           </div>
         </div>
