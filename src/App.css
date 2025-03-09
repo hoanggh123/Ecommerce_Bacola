@@ -16,7 +16,9 @@
     max-width: 1280px !important;
   }
 }
-
+.text-red {
+  color: red !important;
+}
 button {
   outline: none !important;
   background: none !important;
@@ -35,6 +37,7 @@ a {
   font-size: 13px !important;
   padding: 7px 30px !important;
   min-width: auto !important;
+  font-weight: bold !important;
 }
 .btn-big:hover {
   opacity: 0.8;
@@ -44,4 +47,8 @@ a {
 }
 .cartPage .table thead {
   background: #ececec !important;
+}
+
+.section {
+  padding: 45px 0;
 }

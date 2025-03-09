@@ -56,7 +56,7 @@ const ProductDetail = () => {
             </p>
             <div className="productSize d-flex align-items-center">
               <span>Size / Weight:</span>
-              <ul>
+              <ul className="list list-inline mb-0 pl-4">
                 <li className="list list-inline-item">
                   <Button
                     className={`tag ${activeSize === 0 ? "active" : ""}`}

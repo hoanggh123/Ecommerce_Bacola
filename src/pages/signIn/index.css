@@ -1,0 +1,86 @@
+.signInPage {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.signInPage:after {
+  background-image: linear-gradient(#46277e, #583991);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.signInPage .shape-bottom {
+  bottom: -6px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: auto;
+  z-index: 1;
+}
+
+.signInPage .box {
+  background: #fff;
+  border-radius: 10px !important;
+  height: auto;
+  margin: auto;
+  position: relative;
+  width: 400px;
+  z-index: 100;
+}
+.signInPage .box img {
+  width: 164px;
+  height: auto;
+}
+.signInPage .box h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.signInPage .box form {
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.border-effect {
+  color: #337ab7;
+  position: relative;
+  text-decoration: none;
+}
+.signInPage .box .txt {
+  font-size: 14px;
+  font-weight: 700;
+}
+.socials li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.socials li a svg {
+  font-size: 16px;
+  color: #7a55c1;
+}
+.socials li a:hover {
+  background: #6d4aae !important;
+}
+.socials li a:hover svg {
+  color: #fff;
+}
+.loginWithGoogle {
+  color: #000c !important;
+  font-weight: 700 !important;
+  width: 100%;
+}
+.loginWithGoogle img {
+  margin-right: 10px;
+  width: 30px !important;
+}

@@ -8,10 +8,6 @@ import banner5 from "../../assets/images/banner5.jpg";
 import "./index.css";
 const Sidebar = () => {
   const [value, setValue] = useState([100, 6000]);
-  const [value2, setValue2] = useState(0);
-  const [brandFilter, setBrandFilter] = React.useState([]);
-  const [ratingsArr, setRatings] = React.useState([]);
-  const [totalLength, setTotalLength] = useState([]);
   return (
     <>
       <div className="sidebar false">

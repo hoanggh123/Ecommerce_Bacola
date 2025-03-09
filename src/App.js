@@ -3,19 +3,23 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home';
 import Header from './component/header';
-import { createContext, useEffect, useState, useMemo } from 'react';
+import { createContext, useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
 import Footer from './component/footer';
 import ProductModal from './component/productModal';
 import Listing from './pages/listing';
 import ProductDetail from './pages/productDetail';
 import Cart from './pages/cart';
+import SignIn from './pages/signIn';
+import SignUp from './pages/signUp';
+
 const MyContext = createContext();
 
 function App() {
-  const [isOpenProductModal, setIsOpenProductModal] = useState(false);
   const [countryList, setCountryList] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState('');
+  const [isOpenProductModal, setIsOpenProductModal] = useState(false);
+  const [isHeaderFooterShow, setIsHeaderFooterShow] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -37,21 +41,29 @@ function App() {
     }
   }
 
-  const values = useMemo(() => ({ countryList, setSelectedCountry, selectedCountry, isOpenProductModal, setIsOpenProductModal }), [countryList, selectedCountry, isOpenProductModal]);
+  const values = useMemo(() => ({
+    countryList,
+    setSelectedCountry,
+    selectedCountry,
+    isOpenProductModal,
+    setIsOpenProductModal,
+    isHeaderFooterShow,
+    setIsHeaderFooterShow,
+  }), [countryList, selectedCountry, isOpenProductModal, isHeaderFooterShow]);
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>
-        <Header />
+        {isHeaderFooterShow === true && <Header />}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/category/:id' element={<Listing />} />
           <Route exact={true} path='/product/:id' element={<ProductDetail />} />
-          <Route exact={true} path='/cart' element={<Cart/>} />
+          <Route exact={true} path='/cart' element={<Cart />} />
+          <Route exact={true} path='/signIn' element={<SignIn />} />
+          <Route exact={true} path='/signUp' element={<SignUp />} />
         </Routes>
-        <Footer />
+        {isHeaderFooterShow === true && <Footer />}
         {isOpenProductModal && <ProductModal />}
-
-        {/* Loading and Error Messages */}
         {loading && <div className="loading">Loading countries...</div>}
         {error && <div className="error">{error}</div>}
       </MyContext.Provider>
