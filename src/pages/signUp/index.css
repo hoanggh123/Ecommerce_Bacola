@@ -1,0 +1,58 @@
+.signUpPage {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .signUpPage:after {
+    background-image: linear-gradient(#46277e, #583991);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .signUpPage .shape-bottom {
+    bottom: -6px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: auto;
+    z-index: 1;
+  }
+  
+  .signUpPage .box {
+    background: #fff;
+    border-radius: 10px !important;
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 600px;
+    z-index: 100;
+  }
+  .signUpPage .box img {
+    width: 164px;
+    height: auto;
+  }
+  .signUpPage .box h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .signUpPage .box form {
+    padding: 20px 30px;
+    width: 100%;
+  }
+  
+  .border-effect {
+    color: #337ab7;
+    position: relative;
+    text-decoration: none;
+  }
+  .signUpPage .box .txt {
+    font-size: 14px;
+    font-weight: 700;
+  }

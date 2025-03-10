@@ -20,6 +20,7 @@ function App() {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [isOpenProductModal, setIsOpenProductModal] = useState(false);
   const [isHeaderFooterShow, setIsHeaderFooterShow] = useState(true);
+  const [isLogin,setIsLogin] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -48,8 +49,10 @@ function App() {
     isOpenProductModal,
     setIsOpenProductModal,
     isHeaderFooterShow,
+    setIsLogin,
     setIsHeaderFooterShow,
-  }), [countryList, selectedCountry, isOpenProductModal, isHeaderFooterShow]);
+    isLogin
+  }), [countryList, selectedCountry, isOpenProductModal, isHeaderFooterShow, isLogin]);
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>

@@ -5,7 +5,7 @@ import Logo from "../../assets/images/bacola-logo.png";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-// import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
+
 import GoogleImg from "../../assets/images/download.png";
 const SignIn = () => {
   const context = useContext(MyContext);
@@ -63,20 +63,28 @@ const SignIn = () => {
               Forgot PassWord ?
             </a>
             <div className="d-flex align-items-center mt-3 mb-3">
-              <Button className="btn-blue btn-lg btn-big w-100 ">
-                Sign In
-              </Button>
-              <Link to="/">
-                <Button
-                  className="btn-lg btn-big col ml-3"
-                  variant="outlined"
-                  onClick={() =>  context.setIsHeaderFooterShow(true)}
-                >
-                  Cancel
-                </Button>
-              </Link>
+              <div className="row w-100">
+                <div className="col-md-6">
+                  {" "}
+                  <Button className="btn-blue btn-lg btn-big w-100 ">
+                    Sign In
+                  </Button>
+                </div>
+                <div className="col-md-6 pr-0">
+                  {" "}
+                  <Link className="d-block w-100" to="/">
+                    <Button
+                      className="btn-lg btn-big col ml-3"
+                      variant="outlined"
+                      onClick={() => context.setIsHeaderFooterShow(true)}
+                    >
+                      Cancel
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <p className="txt txt mt-4">
+            <p className="txt mt-4">
               Not Registered? <Link to="/signUp">Sign Up</Link>
             </p>
 
@@ -87,23 +95,6 @@ const SignIn = () => {
               <img src={GoogleImg} className="w-100" alt="" />
               Sign In with Google
             </Button>
-            {/* <ul className="list list-inline text-center mt-4 socials">
-              <li className="list-inline-item">
-                <Link to="/">
-                  <FaFacebookF />
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <FaTwitter />
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <FaInstagram />
-                </Link>
-              </li>
-            </ul> */}
             <br />
           </form>
         </div>
